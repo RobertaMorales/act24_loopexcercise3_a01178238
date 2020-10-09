@@ -19,13 +19,13 @@ input.onPinPressed(TouchPin.P0, function () {
         basic.pause(100)
         basic.clearScreen()
     }
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 15; index++) {
         basic.showLeds(`
             . . # . .
             . # # # .
             # . # . #
             . . # . .
-            . # . # .
+            . . # . .
             `)
         basic.pause(100)
         basic.clearScreen()
@@ -45,7 +45,6 @@ input.onButtonPressed(Button.A, function () {
         let y = 0
         led.plot(x, y)
         basic.pause(100)
-        led.unplot(x, y)
     }
 })
 input.onGesture(Gesture.Shake, function () {
